@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>HW</title>
+
+	<link rel="stylesheet" type="text/css" href="style.css">
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.js" integrity="sha512-n/4gHW3atM3QqRcbCn6ewmpxcLAHGaDjpEBu4xZd47N0W2oQ+6q7oc3PXstrJYXcbNU1OHdQ1T7pAP+gi5Yu8g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+	<div class="wrap" id="top">
+		
+		<div class="title">Catch  The Insect</div>
+		<div class="btn" id="btn">Play Game</div>
+
+	</div>
+
+	<div class="wrap" id="middle">
+
+		<div class="time_complexity">
+			
+			<div class="time_complexity_btn">Time Complexity: </div>
+
+			<div class="time_complexity_choose">
+				
+				<div class="time_complexity_choose_item active" id="time_complexity_easy">
+					
+					<div class="time_complexity_choose_item_title">Easy</div>
+					<div class="time_complexity_choose_item_condition">1:00 min</div>
+
+				</div>
+
+				<div class="time_complexity_choose_item" id="time_complexity_medium">
+					
+					<div class="time_complexity_choose_item_title">Medium</div>
+					<div class="time_complexity_choose_item_condition">0:30 sec</div>
+
+				</div>
+
+				<div class="time_complexity_choose_item" id="time_complexity_hard">
+					
+					<div class="time_complexity_choose_item_title">Hard</div>
+					<div class="time_complexity_choose_item_condition">0:15 sec</div>
+
+				</div>
+
+			</div>
+
+		</div>
+
+		<div class="rules">
+			
+			<div class="rules_text">Rules: you need to collect as many insects as possible before the time is up</div>
+
+		</div>
+		
+		<div class="title">What is your "favorite" insect ?</div>
+		<div class="insects">
+			
+			<div class="insect_item" id="fly">
+				
+				<div class="insect_name">Fly</div>
+				<img src="./img/fly.png" class="icon">
+
+			</div>
+
+			<div class="insect_item" id="mosquito">
+				
+				<div class="insect_name">Mosquito</div>
+				<img src="./img/mosquito.png" class="icon">
+
+			</div>
+
+			<div class="insect_item" id="tarantula">
+				
+				<div class="insect_name">Spider</div>
+				<img src="./img/tarantula.png" class="icon">
+
+			</div>
+
+			<div class="insect_item" id="cockroach">
+				
+				<div class="insect_name">Roach</div>
+				<img src="./img/cockroach.png" class="icon">
+
+			</div>
+
+		</div>
+
+	</div>
+
+	<div class="bottom" id="bottom">
+		
+		<div class="bottom_text time">Time: <span id="min">0</span><span id="min_one">0</span>:<span id="sec">0</span><span id="sec_one">0</span></div>
+		<div class="bottom_text score">Score: <span id="score">0</span></div>
+
+		<img src="./img/fly.png" class="icon icon_game" id="fly_game">
+		<img src="./img/mosquito.png" class="icon icon_game" id="mosquito_game">
+		<img src="./img/tarantula.png" class="icon icon_game" id="tarantula_game">
+		<img src="./img/cockroach.png" class="icon icon_game" id="cockroach_game">
+
+	</div>
+
+	<div class="wrap" id="results">
+		
+		<div class="results_container">
+			
+			<div class="user_score">Your score: </div>
+			<span class="user_points" id="user_score"></span>
+
+			<div class="results_btn" id="results_btn">Try again</div>
+
+		</div>
+
+	</div>
+
+	<script type="text/javascript" src="app.js"></script>
+
+</body>
+</html>
